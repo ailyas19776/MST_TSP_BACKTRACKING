@@ -1,8 +1,5 @@
-//1761414855B69983BD8035097EFBD312EB0527F0
-#include "impl.h"
+#include "algorithms.h"
 using namespace std;
-//#include <limits>
-//numeric_limits<double>::infinity()
 void drone::readIn() {
 	int a, b;
 	cin >> size;
@@ -50,11 +47,6 @@ void drone::mainDrone() {
 	
 		auto it = TSP();
 		bestDistance = it.first;
-		/*if (it.first == 31.640613471569932) {
-			cout << 31.64 << endl;
-			cout << "0 4 2 3 1 ";
-			break;
-		}*/
 		it.second.erase(it.second.begin() + it.second.size() - 1);
 		pathC = it.second;
 		genPerms(1);
@@ -176,11 +168,5 @@ double drone::MST_C(vector<Path>& path, int permLength) {
 		finalDistance += path[min_idex].d;
 
 	}//not viable
-	//cout << fixed << showpoint << setprecision(2) << finalDistance << "\n";
-	//for (size_t i = 0; i < path.size(); i++) {
-	//	cout << i << " " << path[i].prev << "\n";
-	//}
-	/*cout << endl << endl ;*/
-	//cout << endl;
 	return { finalDistance };
 }

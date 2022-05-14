@@ -37,8 +37,7 @@ public:
 	void getMode(int argc, char* argv[]);
 	void readIn();
 	double MST_C(std::vector<Path>&, int);
-	void mainDrone();//part A and C very similar
-					 //part B use a helper function, part C uses same helper function for printing results
+	void mainDrone();
 	double MST(std::vector<Path>&);
 	std::pair<double, std::vector<int>> TSP();
 protected:
@@ -109,7 +108,6 @@ public:
 
 	void genPerms(size_t permLength) {//part C
 		if (permLength == pathC.size()) {
-			// Do something with the path
 			currLength += distanceCalculation_MODIFIED(pathC.back(), pathC[0]);//original
 			if (currLength < bestDistance) {
 				bestDistance = currLength;
