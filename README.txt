@@ -1,3 +1,9 @@
+## MST/TSP Calculator
+------------------------------------------------------------
+
+After downloading and extracting the zip, type `source run.sh` to begin compilation
+
+
 For this project there is only one set of input files (regardless
 of platform) for two reasons:
 1) It appears that a patch at some point made Visual Studio able
