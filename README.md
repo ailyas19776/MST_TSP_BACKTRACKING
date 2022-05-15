@@ -18,11 +18,11 @@ There are three modes to this calculator:
 ex:
 
 
-./calculate -m MST < MST_1.txt
+./calculate -m MST < MST_1.txt *(optionally add) > output_MST.txt
 
-./calculate -m FASTTSP < FASTTSTP_1.txt
+./calculate -m FASTTSP < FASTTSTP_1.txt *(optionally add) > output_FASTTSP.txt 
 
-./calculate -m OPTTSP < OPTTSP_1.txt
+./calculate -m OPTTSP < OPTTSP_1.txt *(optionally add)  > output_OPTTSP.txt
 
 
 ## Custom Built MST, FASTTSP, OPTTSP Files
@@ -59,3 +59,4 @@ ex:
 
 **Important to note that there are 5 Locations so this MUST mean there are 5 x,y coordinate pairs**
 
+**Check mode_0 and mode_1 input and output files for more information**
