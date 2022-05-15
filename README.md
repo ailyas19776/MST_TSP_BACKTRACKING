@@ -13,7 +13,7 @@ There are three modes to this calculator:
 
 2. Fast Traveling Sales Problem (FASTTSP)
 
-3. Optimal Traveling Sales Problem (OPTTSP) -- WITH PRUNING
+3. Optimal Traveling Sales Problem (OPTTSP) -- WITH PRUNING & HEURISTICS
 
 ex:
 
